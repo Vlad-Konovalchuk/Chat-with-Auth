@@ -4,6 +4,7 @@ Chat has a history of conversations
 
 ## For using:
 * Download/clone repository
+* Run npm instal
 * Run npm start
 * Open localhost:3000 
 
