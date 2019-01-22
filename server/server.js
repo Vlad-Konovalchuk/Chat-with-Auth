@@ -18,7 +18,7 @@ passport.use(new Strategy(jwt,(jwt_payload,done)=>{
 }));
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/chats',{useNewUrlParser:true})
+mongoose.connect(`mongodb://${procces.ENV.USER}:${procces.ENV.DBPAS}ds147072.mlab.com:47072/chatdb`,{useNewUrlParser:true})
 mongoose.set('debug',true)
 nunjucks.configure("./client/views", {
   autoescape: true,
